@@ -58,7 +58,7 @@ const page: FC<pageprops> = ({params}) => {
   const handleKycUpdate = async () => {
     console.log(newKycValue)
     console.log(userData.unqno)
-   if(parseInt(newKycValue) === userData.unqno){
+   if(newKycValue === userData.unqno){
     try {
         // Assuming newKycValue is set elsewhere in your code
         const newKycValue = 'yes'; // Replace with the actual value
