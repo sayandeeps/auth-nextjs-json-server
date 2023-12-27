@@ -48,7 +48,7 @@ const Register = () => {
 
 
       // Post new user data to the JSON server
-      const response = await axios.post('http://localhost:4000/users', newUser);
+      const response = await axios.post('https://test-json-t6ov.onrender.com/users', newUser);
       //console.log(response);
       const uid = response.data.id;
       const investments1 = {
@@ -68,10 +68,10 @@ const Register = () => {
        
       };
 
-      const response1 = await axios.post('http://localhost:4000/investments', investments1);
+      const response1 = await axios.post('https://test-json-t6ov.onrender.com/investments', investments1);
       console.log('Response 1:', response1.data);
   
-      const response2 = await axios.post('http://localhost:4000/investments', investments2);
+      const response2 = await axios.post('https://test-json-t6ov.onrender.com/investments', investments2);
       console.log('Response 2:', response2.data);
   
 

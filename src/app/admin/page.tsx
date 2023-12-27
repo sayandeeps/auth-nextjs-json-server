@@ -17,7 +17,7 @@ const page = () => {
         // Fetch user data based on the ID from the API
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:4000/users/`);
+            const response = await axios.get(`https://test-json-t6ov.onrender.com/users`);
             
             // Assuming your API returns data in the format like your example user object
             setUserData(response.data);

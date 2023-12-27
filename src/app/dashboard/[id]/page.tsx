@@ -26,8 +26,8 @@ const page: FC<pageprops> = ({params}) => {
         // Fetch user data based on the ID from the API
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:4000/users/${params.id}`);
-            const responseinvest = await axios.get(`http://localhost:4000/investments/?cid=${params.id}`);
+            const response = await axios.get(`https://test-json-t6ov.onrender.com/users/${params.id}`);
+            const responseinvest = await axios.get(`https://test-json-t6ov.onrender.com/investments/?cid=${params.id}`);
             // Assuming your API returns data in the format like your example user object
             setUserData(response.data);
             setUserInvestment(responseinvest.data);
@@ -64,7 +64,7 @@ const page: FC<pageprops> = ({params}) => {
         const newKycValue = 'yes'; // Replace with the actual value
     
         // Make a PATCH request to update kycdone
-        const response = await axios.patch(`http://localhost:4000/users/${params.id}`, { kycdone: newKycValue });
+        const response = await axios.patch(`https://test-json-t6ov.onrender.com/users/${params.id}`, { kycdone: newKycValue });
     
         if (response.status === 200) {
           // Successful update
