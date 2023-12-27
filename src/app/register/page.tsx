@@ -15,7 +15,7 @@ const Register = () => {
   const [kycdone, setKyc] = useState('no');
   const [aadharNumber, setAadharNumber] = useState('');
   const [password, setPassword] = useState(''); // Add password state if required
-  const [unqno, setUnqno] = useState(''); // Add unqno state if required
+  const [unqno, setUnqno] = useState('1111'); // Add unqno state if required
   const [aadhar, setAadhar] = useState(''); // Add aadhar state if required
   const [pan, setPan] = useState(''); // Add pan state if required
   const [email, setEmail] = useState('');

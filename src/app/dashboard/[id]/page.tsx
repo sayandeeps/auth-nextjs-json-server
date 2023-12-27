@@ -103,7 +103,7 @@ const page: FC<pageprops> = ({params}) => {
 <div className="w-full">
     <div className="bg-white shadow-xl rounded-lg py-3">
         <div className="photo-wrapper p-2" style={{ backgroundImage: "url('/Iphone-Background-Aesthetic-City-Night-1-768x1152.jpg')" }}>
-            <img className="w-32 h-32 rounded-full mx-auto" src="https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" alt="John Doe"/>
+            <img className="w-32 h-32 rounded-full mx-auto" src="/dp.png" alt="John Doe"/>
         </div>
         <div className="p-2">
             <h3 className="text-center text-xl text-gray-900 font-medium leading-8">{userData.name}</h3>
