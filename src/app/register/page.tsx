@@ -49,7 +49,7 @@ const Register = () => {
 
       // Post new user data to the JSON server
       const response = await axios.post('https://test-json-t6ov.onrender.com/users', newUser);
-      alert("registration done")
+      alert("registration done");
       //console.log(response);
       const uid = response.data.id;
       const investments1 = {
